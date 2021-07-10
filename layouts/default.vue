@@ -1,7 +1,7 @@
 <template>
-    <div class="bg-gray-bg h-screen font-sans">
+    <div class="h-full font-sans">
         <the-navbar />
         <Nuxt />
-        <the-footer />
+        <!-- <the-footer /> -->
     </div>
 </template>

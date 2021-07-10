@@ -12,6 +12,9 @@ module.exports = {
                     'nav': '#091336'
                 }
             }
+        },
+        maxWidth: {
+            icon: '24px'
         }
     }
 };
