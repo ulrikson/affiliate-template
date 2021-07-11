@@ -1,3 +1,3 @@
 <template>
-    <p>c1</p>
+    <p>Category1</p>
 </template>
