@@ -16,7 +16,7 @@ import CategoryCard from '../components/CategoryCard.vue'
 export default {
     data() {
         return {
-            categories: [1,2,3,4,5]
+            categories: [1,2,3]
         }
     }
 }
