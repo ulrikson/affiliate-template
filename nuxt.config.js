@@ -36,7 +36,7 @@ export default {
             component: 'fa', //customize component name
             imports: [{
                 set: '@fortawesome/free-solid-svg-icons',
-                    icons: ['faChevronRight', 'faLayerGroup']
+                    icons: ['faChevronRight', 'faLayerGroup', 'faPencilRuler', 'faLanguage']
                 }
             ]
         }]

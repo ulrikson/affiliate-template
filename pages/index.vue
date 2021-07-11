@@ -7,6 +7,7 @@
             :key="i"
             :name="category.name"
             :link="category.link"
+            :icon="category.icon"
         />
     </div>
 </template>
@@ -19,9 +20,9 @@ export default {
     data() {
         return {
             categories: [
-                {name: 'category 1', link: '/category1'},
-                {name: 'category 2', link: '/category1'},
-                {name: 'category 3', link: '/category1'}
+                {name: 'category 1', link: '/category1', icon: 'layer-group'},
+                {name: 'category 2', link: '/category1', icon: 'language'},
+                {name: 'category 3', link: '/category1', icon: 'pencil-ruler'}
             ]
         }
     }
