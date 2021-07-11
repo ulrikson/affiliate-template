@@ -9,7 +9,7 @@ module.exports = {
                     'bg': '#f5f7fb'
                 },
                 blue: {
-                    'nav': '#091336'
+                    'nav': '#091336',
                 }
             }
         },
