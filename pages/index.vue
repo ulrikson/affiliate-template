@@ -5,6 +5,8 @@
         <category-card 
             v-for="category in categories" 
             :key="category"
+            :name="category.name"
+            :link="category.link"
         />
     </div>
 </template>
@@ -16,7 +18,11 @@ import CategoryCard from '../components/CategoryCard.vue'
 export default {
     data() {
         return {
-            categories: [1,2,3]
+            categories: [
+                {name: 'category 1', link: '/category1'},
+                {name: 'category 2', link: '/category1'},
+                {name: 'category 3', link: '/category1'}
+            ]
         }
     }
 }
