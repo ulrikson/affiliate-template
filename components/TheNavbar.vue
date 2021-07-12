@@ -1,9 +1,13 @@
 <template>
-    <nav class="py-4 md:w-2/3 mx-auto border-b-2">
-        <ul class='navbar flex justify-center'>
-            <li class="mx-4"><NuxtLink to="/">AffiliateNamn.se</NuxtLink></li>
-            <li class="mx-4"><NuxtLink to="/blog">Blogg</NuxtLink></li>
-            <li class="mx-4"><NuxtLink to="/about">Om</NuxtLink></li>
+    <nav class="py-4 bg-blue-nav text-white">
+        <ul class='flex justify-between w-2/3 mx-auto'>
+            <li><NuxtLink to="/">Logotyp</NuxtLink></li>
+            <li>
+                <NuxtLink to="/blog" class="mx-4">Kategorier</NuxtLink>
+                <NuxtLink to="/blog" class="mx-4">Blogg</NuxtLink>
+                <NuxtLink to="/about" class="mx-4">Om</NuxtLink>
+            </li>
+            <li><NuxtLink to="/" class="bg-green-400 rounded-md p-2">Call To Action</NuxtLink></li>
         </ul>
     </nav>
 </template>
