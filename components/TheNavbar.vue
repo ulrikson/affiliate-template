@@ -59,15 +59,3 @@ export default {
     }
 }
 </script>
-
-<style scoped>
-    .burger {
-        position: absolute;
-        right: 5%;
-        background: white;
-        color: black;
-        padding: 1rem;
-        width: 90%;
-        border-radius: 0.375rem;
-    }
-</style>
