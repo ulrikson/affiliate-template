@@ -34,7 +34,6 @@ export default {
             navLinks: [
                 {name: 'Categories', link: '/blog'},
                 {name: 'Blog', link: '/blog'},
-                {name: 'About', link: '/about'}
             ]
         }
     },
