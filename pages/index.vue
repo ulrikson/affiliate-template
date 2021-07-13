@@ -1,6 +1,7 @@
 <template>
     <div class="mx-auto px-4 my-4">
         <h1 class="text-4xl text-center mb-4">Affiliate</h1>
+        <img src="~/assets/analyse.png" class="md:w-1/2 mx-auto"/>
         <p class="mb-4">Animi asperiores ducimus in et ullam facilis nobis quibusdam. Nobis labore odio aut officiis adipisci. Similique laboriosam laboriosam qui. Eum quo libero voluptatem sed consequatur eius perferendis. Sequi qui asperiores aliquam ut.</p>
         <div class="flex justify-center my-2">
             <NuxtLink to="/" class="bg-green-400 shadow-sm hover:shadow-md text-white rounded-md py-2 px-4">Call to Action</NuxtLink>
@@ -12,6 +13,7 @@
             :link="category.link"
             :icon="category.icon"
         />
+        <p class="mb-4">Animi asperiores ducimus in et ullam facilis nobis quibusdam. Nobis labore odio aut officiis adipisci. Similique laboriosam laboriosam qui. Eum quo libero voluptatem sed consequatur eius perferendis. Sequi qui asperiores aliquam ut.</p>
     </div>
 </template>
 
