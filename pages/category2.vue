@@ -33,6 +33,12 @@ export default {
                     link: 'https://google.com',
                     description: 'Animi asperiores ducimus in et ullam facilis nobis quibusdam. Nobis labore odio aut officiis adipisci. Similique laboriosam laboriosam qui. Eum quo libero voluptatem sed consequatur eius perferendis. Sequi qui asperiores aliquam ut.',
                     image: 'category2.png'   
+                },
+                {
+                    name: 'Product 3', 
+                    link: 'https://yahoo.com',
+                    description: 'Animi asperiores ducimus in et ullam facilis nobis quibusdam. Nobis labore odio aut officiis adipisci. Similique laboriosam laboriosam qui. Eum quo libero voluptatem sed consequatur eius perferendis. Sequi qui asperiores aliquam ut.',
+                    image: 'category3.png'   
                 }
             ]
         }

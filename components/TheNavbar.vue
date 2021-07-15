@@ -1,6 +1,6 @@
 <template>
     <nav class="py-4 bg-blue-nav text-white shadow-lg rounded-b-sm">
-        <ul class='hidden md:flex justify-between w-4/5 mx-auto'>
+        <ul class='hidden md:flex justify-between w-2/3 mx-auto'>
             <li><NuxtLink to="/">Logotype</NuxtLink></li>
             <li>
                 <NuxtLink v-for="(nav,i) in navLinks" :key=i :to="nav.link" class="mx-4">{{nav.name}}</NuxtLink>
