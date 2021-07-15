@@ -26,8 +26,8 @@ export default {
         return {
             categories: [
                 {name: 'category 1', link: '/category1', icon: 'layer-group'},
-                {name: 'category 2', link: '/category1', icon: 'language'},
-                {name: 'category 3', link: '/category1', icon: 'pencil-ruler'}
+                {name: 'category 2', link: '/category2', icon: 'language'},
+                {name: 'category 3', link: '/category3', icon: 'pencil-ruler'}
             ]
         }
     }
