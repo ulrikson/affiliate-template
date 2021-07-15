@@ -3,7 +3,14 @@
         <ul class='hidden md:flex justify-between w-2/3 mx-auto'>
             <li><NuxtLink to="/">Logotype</NuxtLink></li>
             <li>
-                <NuxtLink v-for="(nav,i) in navLinks" :key=i :to="nav.link" class="mx-4">{{nav.name}}</NuxtLink>
+                <NuxtLink 
+                    v-for="(nav,i) in navLinks" 
+                    :key=i 
+                    :to="nav.link" 
+                    class="mx-4 hover:text-gray-200"
+                >
+                    {{nav.name}}
+                </NuxtLink>
             </li>
         </ul>
 
@@ -13,7 +20,7 @@
                 <a href="javascript:void(0);" @click.prevent="toggleBurger"><fa icon="bars" /></a>
                 <div v-show="showBurger" class="burger">
                     <ul>
-                        <li class="my-2" v-for="(nav,i) in navLinks" :key=i @click.prevent="toggleBurger">
+                        <li class="my-2 hover:text-gray-700" v-for="(nav,i) in navLinks" :key=i @click.prevent="toggleBurger">
                             <NuxtLink :to="nav.link" class="flex justify-between">
                                 {{nav.name}}
                                 <fa icon="chevron-right" />
@@ -32,7 +39,9 @@ export default {
         return{
             showBurger: false,
             navLinks: [
-                {name: 'Categories', link: '/blog'},
+                {name: 'Category 1', link: '/category1'},
+                {name: 'Category 2', link: '/category2'},
+                {name: 'Category 3', link: '/category3'},
                 {name: 'Blog', link: '/blog'},
             ]
         }
