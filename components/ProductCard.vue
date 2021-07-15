@@ -4,9 +4,11 @@
             <h2>{{name}}</h2>
             <a :href="link" target="_blank" class="cta">Call to Action <fa icon="chevron-right"/></a>
         </div>
-        <div class="flex">
-            <img :src="getImgUrl(image)" class="object-cover w-full"/>
-            <p class="px-4">{{description}}</p>
+        <div class="md:flex">
+            <div class="md:w-1/4">
+                <img :src="getImgUrl(image)" class="object-cover md:w-full w-2/3 mx-auto"/>
+            </div>
+            <p class="px-4 md:w-3/4">{{description}}</p>
         </div>
     </div>
 </template>
