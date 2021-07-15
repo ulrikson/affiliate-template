@@ -4,7 +4,7 @@
         <img src="~/assets/landing.png" class="w-3/4 md:w-1/2 mx-auto"/>
         <p class="mb-4">Animi asperiores ducimus in et ullam facilis nobis quibusdam. Nobis labore odio aut officiis adipisci. Similique laboriosam laboriosam qui. Eum quo libero voluptatem sed consequatur eius perferendis. Sequi qui asperiores aliquam ut.</p>
         <div class="flex justify-center my-2">
-            <NuxtLink to="/" class="bg-green-400 shadow-sm hover:shadow-md text-white rounded-md py-2 px-4">Call to Action</NuxtLink>
+            <NuxtLink to="/" class="cta">Call to Action</NuxtLink>
         </div>
         <category-card 
             v-for="(category,i) in categories" 
