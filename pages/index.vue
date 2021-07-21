@@ -7,10 +7,10 @@
             <nuxt-link to="/" class="cta">Call to Action</nuxt-link>
         </div>
         <category-card 
-            v-for="(category,i) in categories" 
+            v-for="(category,i) in categories.categories" 
             :key="i"
             :name="category.name"
-            :link="category.link"
+            :link="'categories/'+category.slug"
             :icon="category.icon"
         />
         <p class="mb-4">Animi asperiores ducimus in et ullam facilis nobis quibusdam. Nobis labore odio aut officiis adipisci. Similique laboriosam laboriosam qui. Eum quo libero voluptatem sed consequatur eius perferendis. Sequi qui asperiores aliquam ut.</p>
@@ -22,14 +22,9 @@
 import CategoryCard from '../components/CategoryCard.vue'
 
 export default {
-    data() {
-        return {
-            categories: [
-                {name: 'category 1', link: '/category1', icon: 'layer-group'},
-                {name: 'category 2', link: '/category2', icon: 'language'},
-                {name: 'category 3', link: '/category3', icon: 'pencil-ruler'}
-            ]
-        }
+    async asyncData({ $content }) {
+        const categories = await $content("categories").fetch();
+        return { categories };
     }
 }
 
