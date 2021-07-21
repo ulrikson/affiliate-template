@@ -1,30 +1,30 @@
 <template>
     <nav class="py-4 bg-blue-nav text-white shadow-lg rounded-b-sm">
         <ul class='hidden md:flex justify-between w-2/3 mx-auto'>
-            <li><NuxtLink to="/">Logotype</NuxtLink></li>
+            <li><nuxt-link to="/">Logotype</nuxt-link></li>
             <li>
-                <NuxtLink 
+                <nuxt-link 
                     v-for="(nav,i) in navLinks" 
                     :key=i 
                     :to="nav.link" 
                     class="mx-4 hover:text-gray-200"
                 >
                     {{nav.name}}
-                </NuxtLink>
+                </nuxt-link>
             </li>
         </ul>
 
         <ul class='md:hidden px-4 flex justify-between items-center'>
-            <li><NuxtLink to="/">Logotype</NuxtLink></li>
+            <li><nuxt-link to="/">Logotype</nuxt-link></li>
             <li>
                 <a href="javascript:void(0);" @click.prevent="toggleBurger"><fa icon="bars" /></a>
                 <div v-show="showBurger" class="burger">
                     <ul>
                         <li class="my-2 hover:text-gray-700" v-for="(nav,i) in navLinks" :key=i @click.prevent="toggleBurger">
-                            <NuxtLink :to="nav.link" class="flex justify-between">
+                            <nuxt-link :to="nav.link" class="flex justify-between">
                                 {{nav.name}}
                                 <fa icon="chevron-right" />
-                            </NuxtLink>
+                            </nuxt-link>
                         </li>
                     </ul>
                 </div>
