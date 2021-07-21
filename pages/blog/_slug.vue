@@ -1,6 +1,9 @@
 <template>
     <article>
-        <nuxt-content :document="article" />
+        <nuxt-content 
+            :document="article"
+            class="bg-white p-8 md:px-16 my-4 mx-2 rounded-md"
+        />
     </article>
 </template>
 

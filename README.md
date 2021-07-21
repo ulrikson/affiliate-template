@@ -1,5 +1,8 @@
 # affiliate-template
 
+## Sources
+https://devdojo.com/mezie/build-a-blog-with-nuxtjs#showing-a-single-post
+
 ## Build Setup
 
 ```bash
