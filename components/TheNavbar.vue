@@ -39,9 +39,7 @@ export default {
         return{
             showBurger: false,
             navLinks: [
-                {name: 'Category 1', link: '/category1'},
-                {name: 'Category 2', link: '/category2'},
-                {name: 'Category 3', link: '/category3'},
+                {name: 'Home', link: '/'},
                 {name: 'Blog', link: '/blog'},
             ]
         }
