@@ -1,6 +1,6 @@
 <template>
-    <nav class="py-4 bg-blue-nav text-white shadow-lg rounded-b-sm">
-        <ul class='hidden md:flex justify-between w-2/3 mx-auto'>
+    <nav class="py-4">
+        <ul class='hidden md:flex justify-between px-16'>
             <li><nuxt-link to="/">Logotype</nuxt-link></li>
             <li>
                 <nuxt-link 

@@ -12,8 +12,6 @@
 
 <script>
 
-import CategoryCard from '../components/CategoryCard.vue'
-
 export default {
 
 }
