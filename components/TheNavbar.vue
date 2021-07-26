@@ -1,51 +1,10 @@
 <template>
     <nav class="py-4">
-        <ul class="hidden md:flex justify-between px-16">
+        <ul class="md:flex justify-between px-16">
             <li>
                 <nuxt-link to="/">
                     <img src="~/assets/logo.webp" class="logo" />
                 </nuxt-link>
-            </li>
-            <li>
-                <nuxt-link
-                    v-for="(nav, i) in navLinks"
-                    :key="i"
-                    :to="nav.link"
-                    class="mx-4 hover:text-gray-200"
-                >
-                    {{ nav.name }}
-                </nuxt-link>
-            </li>
-        </ul>
-
-        <ul class="md:hidden px-4 flex justify-between items-center">
-            <li>
-                <nuxt-link to="/">
-                    <img src="~/assets/logo.webp" class="logo" />
-                </nuxt-link>
-            </li>
-            <li>
-                <a href="javascript:void(0);" @click.prevent="toggleBurger"
-                    ><fa icon="bars"
-                /></a>
-                <div v-show="showBurger" class="burger">
-                    <ul>
-                        <li
-                            class="my-2 hover:text-gray-700"
-                            v-for="(nav, i) in navLinks"
-                            :key="i"
-                            @click.prevent="toggleBurger"
-                        >
-                            <nuxt-link
-                                :to="nav.link"
-                                class="flex justify-between"
-                            >
-                                {{ nav.name }}
-                                <fa icon="chevron-right" />
-                            </nuxt-link>
-                        </li>
-                    </ul>
-                </div>
             </li>
         </ul>
     </nav>
@@ -53,34 +12,6 @@
 
 <script>
 export default {
-    data() {
-        return {
-            showBurger: false,
-            navLinks: [
-                { name: "Home", link: "/" },
-                { name: "Blog", link: "/blog" }
-            ]
-        };
-    },
 
-    mounted() {
-        document.addEventListener("click", this.handleOutsideClick);
-    },
-
-    beforeDestroy() {
-        document.removeEventListener("click", this.handleOutsideClick);
-    },
-
-    methods: {
-        toggleBurger() {
-            this.showBurger = !this.showBurger;
-        },
-
-        handleOutsideClick(event) {
-            if (this.showBurger && !this.$el.contains(event.target)) {
-                this.showBurger = false;
-            }
-        }
-    }
 };
 </script>
