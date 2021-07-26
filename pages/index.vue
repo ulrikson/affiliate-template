@@ -1,9 +1,9 @@
 <template>
     <div class="mx-auto px-4 my-4">
-        <h1 class="mb-4">Affiliatesida</h1>
+        <h1 class="mb-4">Affiliatesite.com</h1>
         <div class="md:flex">
             <div class="md:w-2/3">
-                <p class="mb-4">
+                <p class="mb-4 md:pr-8">
                     Animi asperiores ducimus in et ullam facilis nobis
                     quibusdam. Nobis labore odio aut officiis adipisci.
                     Similique laboriosam laboriosam qui. Eum quo libero
@@ -15,14 +15,15 @@
                     :key="article.slug"
                     :to="'blog/' + article.slug"
                 >
-                    <div class="p-4 my-4">
+                    <div class="my-4 px-4">
                         <h2>{{ article.title }}</h2>
                         <p>{{ article.description }}</p>
                     </div>
                 </nuxt-link>
             </div>
-            <div class="md:w-1/3 bg-gray-bg">
-                Products
+            <div class="md:w-1/3 bg-gray-bg rounded-md p-4 md:px-8">
+                <h2>Popular products</h2>
+                <!-- v-for product in popular products json... -->
             </div>
         </div>
     </div>

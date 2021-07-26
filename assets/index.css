@@ -29,4 +29,9 @@
     .logo {
         max-width: 100px;
     }
+
+    /* NUXT CONTENT */
+    .nuxt-content h2 {
+        @apply text-3xl
+    }
 }
