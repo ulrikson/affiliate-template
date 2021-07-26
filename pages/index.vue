@@ -1,8 +1,8 @@
 <template>
     <div class="mx-auto px-4 my-4">
         <h1 class="mb-4">Affiliatesida</h1>
-        <div class="flex">
-            <div class="w-2/3">
+        <div class="md:flex">
+            <div class="md:w-2/3">
                 <p class="mb-4">
                     Animi asperiores ducimus in et ullam facilis nobis
                     quibusdam. Nobis labore odio aut officiis adipisci.
@@ -21,7 +21,7 @@
                     </div>
                 </nuxt-link>
             </div>
-            <div class="w-1/3 bg-gray-bg">
+            <div class="md:w-1/3 bg-gray-bg">
                 Products
             </div>
         </div>

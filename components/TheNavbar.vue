@@ -1,6 +1,6 @@
 <template>
     <nav class="py-4">
-        <ul class="md:flex justify-between px-16">
+        <ul class="md:flex justify-between px-8 md:px-16">
             <li>
                 <nuxt-link to="/">
                     <img src="~/assets/logo.webp" class="logo" />
