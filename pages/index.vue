@@ -16,7 +16,7 @@
 					>
 						<img
 							:src="require(`~/assets/images/${articles[0].img}`)"
-							class="md:w-1/2 h-60 object-cover rounded-md"
+							class="md:w-1/2 md:h-60 object-cover rounded-md"
 						/>
 						<div class="md:w-1/2 md:pl-4">
 							<p>{{ formatDate(articles[0].updatedAt) }}</p>
