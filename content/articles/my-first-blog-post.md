@@ -1,6 +1,6 @@
 ---
-title: My first product Post
-description: Learning how to use @nuxt/content to create a product
+title: My first product Post how to blablabla
+description: Learning how to use @nuxt/content to create a product owowowo wo wodaksdlaskd sdlsakdlkasdd jasdlksld
 img: first-blog-post.jpg
 alt: my first product post
 ---

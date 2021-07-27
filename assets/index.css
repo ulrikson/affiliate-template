@@ -8,7 +8,7 @@
     }
 
     h2 {
-        @apply text-lg font-bold;
+        @apply text-2xl font-bold;
     }
 
     .cta {
@@ -28,10 +28,6 @@
 
     .logo {
         max-width: 100px;
-    }
-
-    .preview {
-        max-width: 200px;
     }
 
     /* NUXT CONTENT */
