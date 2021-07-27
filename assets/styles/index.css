@@ -15,36 +15,6 @@
 		max-width: 100px;
 	}
 
-	/* LANDING LIST OF ARTICLES */
-
-    .landing-list {
-        @apply my-4;
-    }
-
-	.landing-list img {
-		@apply rounded-md;
-	}
-
-	.landing-list .post-info {
-		@apply pl-4;
-	}
-
-    .landing-list h2 {
-        @apply my-4;
-    }
-
-	.landing-list:first-of-type a {
-		@apply flex justify-between;
-	}
-
-	.landing-list:first-of-type img {
-		@apply w-1/2;
-	}
-
-	.landing-list:first-of-type .post-info {
-		@apply w-1/2;
-	}
-
 	/* NUXT CONTENT */
 	.nuxt-content h2 {
 		@apply text-3xl;

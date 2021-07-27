@@ -9,15 +9,34 @@
 					perferendis. Sequi qui asperiores aliquam ut.
 				</p>
 
-				<div v-for="article in articles" :key="article.slug" class="landing-list">
-					<nuxt-link :to="{ name: 'blog-slug', params: { slug: article.slug } }">
-						<img :src="require(`~/assets/images/${article.img}`)" />
-						<div class="post-info">
-							<p>{{ formatDate(article.updatedAt) }}</p>
-							<h2>{{ article.title }}</h2>
-							<p>{{ article.description }}</p>
+				<div class="my-4">
+					<nuxt-link
+						:to="{ name: 'blog-slug', params: { slug: articles[0].slug } }"
+						class="md:flex justify-between"
+					>
+						<img
+							:src="require(`~/assets/images/${articles[0].img}`)"
+							class="md:w-1/2 h-60 object-cover rounded-md"
+						/>
+						<div class="md:w-1/2 md:pl-4">
+							<p>{{ formatDate(articles[0].updatedAt) }}</p>
+							<h2 class="my-4">{{ articles[0].title }}</h2>
+							<p>{{ articles[0].description }}</p>
 						</div>
 					</nuxt-link>
+				</div>
+
+				<div class="md:flex flex-wrap">
+					<div v-for="article in articles.slice(1)" :key="article.slug" class="md:w-1/3 pr-4 my-4">
+						<nuxt-link :to="{ name: 'blog-slug', params: { slug: article.slug } }">
+							<img :src="require(`~/assets/images/${article.img}`)" class="object-cover rounded-md" />
+							<div class="">
+								<p>{{ formatDate(article.updatedAt) }}</p>
+								<h2 class="my-4">{{ article.title }}</h2>
+								<p>{{ article.description }}</p>
+							</div>
+						</nuxt-link>
+					</div>
 				</div>
 			</div>
 			<div class="md:w-1/3 bg-gray-bg rounded-md p-4 md:px-8">
