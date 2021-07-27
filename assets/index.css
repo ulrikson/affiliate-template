@@ -30,6 +30,10 @@
         max-width: 100px;
     }
 
+    .preview {
+        max-width: 200px;
+    }
+
     /* NUXT CONTENT */
     .nuxt-content h2 {
         @apply text-3xl;

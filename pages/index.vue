@@ -10,16 +10,22 @@
                     voluptatem sed consequatur eius perferendis. Sequi qui
                     asperiores aliquam ut.
                 </p>
-                <nuxt-link
-                    v-for="article in articles"
-                    :key="article.slug"
-                    :to="'blog/' + article.slug"
-                >
-                    <div class="my-4 px-4">
-                        <h2>{{ article.title }}</h2>
-                        <p>{{ article.description }}</p>
-                    </div>
-                </nuxt-link>
+                <ul>
+                    <li v-for="article of articles" :key="article.slug">
+                        <NuxtLink
+                            :to="{
+                                name: 'blog-slug',
+                                params: { slug: article.slug }
+                            }"
+                        >
+                            <img :src="require(`~/assets/images/${article.img}`)" class="preview" />
+                            <div>
+                                <h2>{{ article.title }}</h2>
+                                <p>{{ article.description }}</p>
+                            </div>
+                        </NuxtLink>
+                    </li>
+                </ul>
             </div>
             <div class="md:w-1/3 bg-gray-bg rounded-md p-4 md:px-8">
                 <h2>Popular products</h2>
@@ -31,11 +37,15 @@
 
 <script>
 export default {
-    async asyncData({ $content }) {
+    async asyncData({ $content, params }) {
         const articles = await $content("articles")
-            .sortBy("createdAt", "desc")
+            .only(["title", "description", "img", "slug"])
+            .sortBy("createdAt", "asc")
             .fetch();
-        return { articles };
+
+        return {
+            articles
+        };
     }
 };
 </script>

@@ -6,6 +6,9 @@
                     <img src="~/assets/logo.webp" class="logo" />
                 </nuxt-link>
             </li>
+            <li>
+                <AppSearchInput />
+            </li>
         </ul>
     </nav>
 </template>
