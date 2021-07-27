@@ -1,8 +1,8 @@
 ---
-title: My second Blog Post
-description: Learning how to use @nuxt/content to create a blog
+title: My second product Post
+description: Learning how to use @nuxt/content to create a product
 img: first-blog-post.jpg
-alt: my first blog post
+alt: my first product post
 ---
 
 ## This is a heading

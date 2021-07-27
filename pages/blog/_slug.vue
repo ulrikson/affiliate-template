@@ -1,22 +1,25 @@
 <template>
     <article>
         <h1>{{ article.title }}</h1>
-        <p>{{ article.description }}</p>
-        <img
-            :src="require(`~/assets/images/${article.img}`)"
-            :alt="article.alt"
-        />
-        <p>Article last updated: {{ formatDate(article.updatedAt) }}</p>
+        <div class="md:w-2/3 mx-auto">
+            <img
+                :src="require(`~/assets/images/${article.img}`)"
+                :alt="article.alt"
+                class="md:h-96 my-4 rounded-md object-cover w-full"
+            />
 
-        <nav class="my-8">
-            <ul>
-                <li v-for="link of article.toc" :key="link.id">
-                    <NuxtLink :to="`#${link.id}`">{{ link.text }}</NuxtLink>
-                </li>
-            </ul>
-        </nav>
+            <p>{{ article.description }}</p>
 
-        <nuxt-content :document="article" class="my-8" />
+            <nav class="my-8">
+                <ul>
+                    <li v-for="link of article.toc" :key="link.id">
+                        <NuxtLink :to="`#${link.id}`">{{ link.text }}</NuxtLink>
+                    </li>
+                </ul>
+            </nav>
+
+            <nuxt-content :document="article" class="my-8" />
+        </div>
 
         <prev-next :prev="prev" :next="next" />
     </article>
@@ -46,11 +49,6 @@ export default {
         };
     },
 
-    methods: {
-        formatDate(date) {
-            const options = { year: "numeric", month: "long", day: "numeric" };
-            return new Date(date).toLocaleDateString("en", options);
-        }
-    }
+    methods: {}
 };
 </script>
