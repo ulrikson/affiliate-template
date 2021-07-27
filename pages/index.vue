@@ -9,10 +9,10 @@
 					perferendis. Sequi qui asperiores aliquam ut.
 				</p>
 
-				<div v-for="article in articles" :key="article.slug" class="landning-list">
+				<div v-for="article in articles" :key="article.slug" class="landing-list">
 					<nuxt-link :to="{ name: 'blog-slug', params: { slug: article.slug } }">
 						<img :src="require(`~/assets/images/${article.img}`)" />
-						<div>
+						<div class="post-info">
 							<p>{{ formatDate(article.updatedAt) }}</p>
 							<h2>{{ article.title }}</h2>
 							<p>{{ article.description }}</p>
