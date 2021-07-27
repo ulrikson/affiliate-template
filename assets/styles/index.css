@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+}
+
 @layer base {
 	h1 {
 		@apply text-4xl text-center md:text-6xl border-b-2 border-black border-solid py-4;
