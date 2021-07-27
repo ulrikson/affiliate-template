@@ -8,7 +8,15 @@
         />
         <p>Article last updated: {{ formatDate(article.updatedAt) }}</p>
 
-        <nuxt-content :document="article" />
+        <nav class="my-8">
+            <ul>
+                <li v-for="link of article.toc" :key="link.id">
+                    <NuxtLink :to="`#${link.id}`">{{ link.text }}</NuxtLink>
+                </li>
+            </ul>
+        </nav>
+
+        <nuxt-content :document="article" class="my-8" />
     </article>
 </template>
 
