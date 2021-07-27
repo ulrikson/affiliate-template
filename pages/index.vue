@@ -9,30 +9,23 @@
 					perferendis. Sequi qui asperiores aliquam ut.
 				</p>
 
-				<div class="my-4">
-					<nuxt-link
-						:to="{ name: 'blog-slug', params: { slug: articles[0].slug } }"
-						class="md:flex justify-between"
+				<div class="md:flex flex-wrap my-8">
+					<div
+						v-for="(article, i) in articles"
+						:key="article.slug"
+						:class="[i === 0 ? 'md:w-full' : 'md:w-1/3', 'md:pr-4 my-4']"
 					>
-						<img
-							:src="require(`~/assets/images/${articles[0].img}`)"
-							class="md:w-1/2 md:h-60 object-cover rounded-md"
-						/>
-						<div class="md:w-1/2 md:pl-4">
-							<p>{{ formatDate(articles[0].updatedAt) }}</p>
-							<h2 class="my-4">{{ articles[0].title }}</h2>
-							<p>{{ articles[0].description }}</p>
-						</div>
-					</nuxt-link>
-				</div>
-
-				<div class="md:flex flex-wrap">
-					<div v-for="article in articles.slice(1)" :key="article.slug" class="md:w-1/3 md:pr-4 my-4">
-						<nuxt-link :to="{ name: 'blog-slug', params: { slug: article.slug } }">
-							<img :src="require(`~/assets/images/${article.img}`)" class="object-cover rounded-md" />
-							<div class="">
-								<p>{{ formatDate(article.updatedAt) }}</p>
-								<h2 class="my-4">{{ article.title }}</h2>
+						<nuxt-link
+							:to="{ name: 'blog-slug', params: { slug: article.slug } }"
+							:class="{ 'md:flex justify-between': i === 0 }"
+						>
+							<img
+								:src="require(`~/assets/images/${article.img}`)"
+								:class="[{ 'md:w-1/2 md:h-60': i === 0 }, 'object-cover rounded-md']"
+							/>
+							<div :class="{ 'md:w-1/2 md:pl-4': i === 0 }">
+								<p class="text-gray-600">{{ formatDate(article.updatedAt) }}</p>
+								<h2 class="my-2">{{ article.title }}</h2>
 								<p>{{ article.description }}</p>
 							</div>
 						</nuxt-link>
