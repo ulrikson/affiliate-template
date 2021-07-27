@@ -27,7 +27,7 @@
 				</div>
 
 				<div class="md:flex flex-wrap">
-					<div v-for="article in articles.slice(1)" :key="article.slug" class="md:w-1/3 pr-4 my-4">
+					<div v-for="article in articles.slice(1)" :key="article.slug" class="md:w-1/3 md:pr-4 my-4">
 						<nuxt-link :to="{ name: 'blog-slug', params: { slug: article.slug } }">
 							<img :src="require(`~/assets/images/${article.img}`)" class="object-cover rounded-md" />
 							<div class="">
