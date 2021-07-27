@@ -6,9 +6,9 @@
                     <img src="~/assets/logo.webp" class="logo" />
                 </nuxt-link>
             </li>
-            <li class="w-1/2 md:w-1/3">
+            <!-- <li class="w-1/2 md:w-1/3">
                 <AppSearchInput />
-            </li>
+            </li> -->
         </ul>
     </nav>
 </template>
