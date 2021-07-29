@@ -13,7 +13,7 @@
 					<div
 						v-for="(article, i) in articles"
 						:key="article.slug"
-						:class="[i === 0 ? 'md:w-full' : 'md:w-1/3', 'md:pr-4 my-4']"
+						:class="[i === 0 ? 'md:w-full' : 'md:w-1/3', 'md:px-4 md:py-2 my-4 rounded-md hover:shadow-md']"
 					>
 						<nuxt-link
 							:to="{ name: 'blog-slug', params: { slug: article.slug } }"
@@ -35,7 +35,7 @@
 			<div class="md:w-1/3 bg-gray-bg rounded-md p-4 md:px-8">
 				<h2>Popular products</h2>
 				<a :href="product.link" target="blank_" v-for="product in products" :key="product.key">
-					<div class="bg-white p-4 rounded-md my-4">
+					<div class="bg-white p-4 rounded-md my-4 hover:shadow-md">
 						<div class="flex items-center justify-between">
 							<div class="flex items-center">
 								<img :src="require(`~/assets/images/${product.image}`)" class="product-img" />
@@ -52,13 +52,13 @@
 </template>
 
 <script>
-import products from "/assets/products/popular.json";
+import products from '/assets/products/popular.json';
 
 export default {
 	async asyncData({ $content, params }) {
-		const articles = await $content("articles")
-			.only(["title", "description", "img", "slug", "updatedAt"])
-			.sortBy("createdAt", "asc")
+		const articles = await $content('articles')
+			.only(['title', 'description', 'img', 'slug', 'updatedAt'])
+			.sortBy('createdAt', 'asc')
 			.fetch();
 
 		return {
@@ -74,8 +74,8 @@ export default {
 
 	methods: {
 		formatDate(date) {
-			const options = { year: "numeric", month: "long", day: "numeric" };
-			return new Date(date).toLocaleDateString("en", options);
+			const options = { year: 'numeric', month: 'long', day: 'numeric' };
+			return new Date(date).toLocaleDateString('en', options);
 		},
 	},
 };
