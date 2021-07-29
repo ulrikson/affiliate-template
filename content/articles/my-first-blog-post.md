@@ -3,6 +3,7 @@ title: My first product Post how to blablabla
 description: Learning how to use @nuxt/content to create a product owowowo wo wodaksdlaskd sdlsakdlkasdd jasdlksld
 img: first-blog-post.jpg
 alt: my first product post
+credits: {creator: Sumner Mahaffey, origin: Unsplash, url: https://unsplash.com/photos/7vCt_lFxKx4}
   
 ---
 

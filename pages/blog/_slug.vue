@@ -6,10 +6,15 @@
 			<img
 				:src="require(`~/assets/images/${article.img}`)"
 				:alt="article.alt"
-				class="md:h-96 my-4 rounded-md object-cover w-full"
+				class="md:h-96 mt-4 rounded-md object-cover w-full"
 			/>
+			<p class="text-center text-gray-500 text-xs">
+				Photo by
+				<a :href="article.credits.url" target="blank_" rel="no-follow" class="underline">{{ article.credits.creator }}</a> on
+				{{ article.credits.origin }}
+			</p>
 
-			<p>{{ article.description }}</p>
+			<p class="mt-4">{{ article.description }}</p>
 
 			<nuxt-content :document="article" class="my-8" />
 		</div>

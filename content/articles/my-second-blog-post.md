@@ -3,6 +3,7 @@ title: My second product Post how to blablabla
 description: Learning how to use @nuxt/content to create a product owowowo wo wodaksdlaskd sdlsakdlkasdd jasdlksld
 img: second-blog-post.jpg
 alt: my second product post
+credits: {creator: Privecstasy, origin: Unsplash, url: https://unsplash.com/photos/CXlqHmQy3MY}
 ---
 
 ## This is a heading
