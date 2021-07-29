@@ -3,24 +3,24 @@
 @tailwind utilities;
 
 body {
-	font-family: 'Poppins', sans-serif;
+	font-family: "Poppins", sans-serif;
 }
 
 p {
-	font-family: 'Open Sans', sans-serif;
+	font-family: "Open Sans", sans-serif;
 }
 
 @layer base {
 	h1 {
-		@apply text-3xl md:text-4xl text-center border-b-2 border-black border-solid py-4;
+		@apply text-3xl md:text-4xl text-center py-4;
 	}
 
 	h2 {
-		@apply text-2xl;
+		@apply text-xl md:text-2xl;
 	}
 
 	h3 {
-		@apply text-xl;
+		@apply text-lg md:text-xl;
 	}
 
 	.logo {
@@ -38,6 +38,10 @@ p {
 
 	/* NUXT CONTENT */
 	.nuxt-content h2 {
-		
+		@apply my-4;
+	}
+
+	.nuxt-content p {
+		@apply my-2;
 	}
 }
