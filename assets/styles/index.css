@@ -16,15 +16,28 @@ p {
 	}
 
 	h2 {
-		@apply text-2xl font-bold;
+		@apply text-2xl;
+	}
+
+	h3 {
+		@apply text-lg;
 	}
 
 	.logo {
 		max-width: 100px;
 	}
 
+	.product-img {
+		max-width: 50px;
+		@apply rounded-md;
+	}
+
+	.cta {
+		@apply py-1 px-8 bg-green-400 rounded-md hover:shadow-md;
+	}
+
 	/* NUXT CONTENT */
 	.nuxt-content h2 {
-		@apply text-3xl;
+		
 	}
 }

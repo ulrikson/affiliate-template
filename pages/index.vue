@@ -34,13 +34,26 @@
 			</div>
 			<div class="md:w-1/3 bg-gray-bg rounded-md p-4 md:px-8">
 				<h2>Popular products</h2>
-				<!-- v-for product in popular products json... -->
+				<a :href="product.link" target="blank_" v-for="product in products" :key="product.key">
+					<div class="bg-white p-4 rounded-md my-4">
+						<div class="flex items-center justify-between">
+							<div class="flex items-center">
+								<img :src="require(`~/assets/images/${product.image}`)" class="product-img" />
+								<h3 class="ml-4">{{ product.title }}</h3>
+							</div>
+							<span><fa icon="chevron-right"/></span>
+						</div>
+						<p class="mt-2 text-gray-700">{{ product.description }}</p>
+					</div>
+				</a>
 			</div>
 		</div>
 	</div>
 </template>
 
 <script>
+import products from "/assets/products/popular.json";
+
 export default {
 	async asyncData({ $content, params }) {
 		const articles = await $content("articles")
@@ -50,6 +63,12 @@ export default {
 
 		return {
 			articles,
+		};
+	},
+
+	data() {
+		return {
+			products: products,
 		};
 	},
 

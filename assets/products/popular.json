@@ -1,0 +1,10 @@
+[
+    {
+        "title": "Product 1",
+        "description": "Bla bla bla about product 1",
+        "key": "p1",
+        "image": "product1.jpg",
+        "alt": "Beskrivning av produkt 1",
+        "link": "https://google.com"
+    }
+]
