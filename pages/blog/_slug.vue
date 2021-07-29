@@ -8,7 +8,6 @@
 				:alt="article.alt"
 				class="md:h-96 my-4 rounded-md object-cover w-full"
 			/>
-            <p>Photo credit: <a :href="article.credits" target="blank_" rel="nofollow">Unsplash</a></p>
 
 			<p>{{ article.description }}</p>
 
