@@ -3,7 +3,7 @@
         "title": "Product 1",
         "description": "Bla bla bla about product 1",
         "key": "p1",
-        "img": "product1.jpg",
+        "img": "product1.png",
         "alt": "Beskrivning av produkt 1",
         "link": "https://google.com"
     },
@@ -11,7 +11,7 @@
         "title": "Product 2",
         "description": "Bla bla bla about product 1 aooasd  adjnaskd a dnkajdkajds asjdkajdla",
         "key": "p2",
-        "img": "product1.jpg",
+        "img": "product1.png",
         "alt": "Beskrivning av produkt 1",
         "link": "https://google.com"
     },
@@ -19,7 +19,7 @@
         "title": "Product 3",
         "description": "Bla bla bla about product 3",
         "key": "p3",
-        "img": "product1.jpg",
+        "img": "product1.png",
         "alt": "Beskrivning av produkt 3",
         "link": "https://google.com"
     }

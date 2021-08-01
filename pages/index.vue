@@ -39,7 +39,7 @@
 					<div class="bg-white p-4 rounded-md my-4 hover:shadow-md">
 						<div class="flex items-center justify-between">
 							<div class="flex items-center">
-								<nuxt-img :src="'/images/' + product.img" width="50" height="50" class="rounded-md" />
+								<nuxt-img :src="'/images/' + product.img" sizes="sm:50px" class="rounded-md" />
 								<h3 class="ml-4">{{ product.title }}</h3>
 							</div>
 							<span><fa icon="chevron-right"/></span>
