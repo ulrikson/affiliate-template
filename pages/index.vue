@@ -19,8 +19,9 @@
 							:to="{ name: 'blog-slug', params: { slug: article.slug } }"
 							:class="{ 'md:flex justify-between': i === 0 }"
 						>
-							<img
-								:src="require(`~/assets/images/${article.img}`)"
+							<nuxt-img
+								:src="'/images/' + article.img"
+								:sizes="i === 0 ? 'md:600px' : 'md:400px'"
 								:class="[{ 'md:w-1/2 md:h-60': i === 0 }, 'object-cover rounded-md']"
 							/>
 							<div :class="{ 'md:w-1/2 md:pl-4': i === 0 }">
@@ -38,7 +39,7 @@
 					<div class="bg-white p-4 rounded-md my-4 hover:shadow-md">
 						<div class="flex items-center justify-between">
 							<div class="flex items-center">
-								<img :src="require(`~/assets/images/${product.image}`)" class="product-img" />
+								<nuxt-img :src="'/images/' + product.img" width="50" height="50" class="rounded-md" />
 								<h3 class="ml-4">{{ product.title }}</h3>
 							</div>
 							<span><fa icon="chevron-right"/></span>

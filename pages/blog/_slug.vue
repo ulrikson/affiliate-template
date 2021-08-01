@@ -3,8 +3,9 @@
 		<h1>{{ article.title }}</h1>
 		<p class="text-center text-gray-500">Last updated: {{ formatDate(article.updatedAt) }}</p>
 		<div class="md:w-2/3 mx-auto">
-			<img
-				:src="require(`~/assets/images/${article.img}`)"
+			<nuxt-img
+				:src="'/images/' + article.img"
+				sizes="md:800px"
 				:alt="article.alt"
 				class="md:h-96 mt-4 rounded-md object-cover w-full"
 			/>

@@ -3,7 +3,7 @@
         <ul class="flex justify-between items-center px-8 md:px-16">
             <li class="w-1/2 md:w-2/3">
                 <nuxt-link to="/">
-                    <img src="~/assets/logo.webp" class="logo" />
+                    <nuxt-img src="/images/logo.webp" sizes="sm:200px" class="logo" />
                 </nuxt-link>
             </li>
             <!-- <li class="w-1/2 md:w-1/3">
