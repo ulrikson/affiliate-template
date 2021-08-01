@@ -5,7 +5,7 @@
 		<div class="md:w-2/3 mx-auto">
 			<nuxt-img
 				:src="'/images/' + article.img"
-				sizes="md:800px"
+				sizes="sm:300px md:800px"
 				:alt="article.alt"
 				class="md:h-96 mt-4 rounded-md object-cover w-full"
 			/>

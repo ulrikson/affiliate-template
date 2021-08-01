@@ -21,7 +21,7 @@
 						>
 							<nuxt-img
 								:src="'/images/' + article.img"
-								:sizes="i === 0 ? 'md:600px' : 'md:400px'"
+								:sizes="i === 0 ? 'md:600px sm:300px' : 'md:400px sm:300px'"
 								:class="[{ 'md:w-1/2 md:h-60': i === 0 }, 'object-cover rounded-md']"
 							/>
 							<div :class="{ 'md:w-1/2 md:pl-4': i === 0 }">
