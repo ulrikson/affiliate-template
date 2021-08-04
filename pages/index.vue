@@ -1,6 +1,6 @@
 <template>
 	<div class="mx-auto px-4 my-4">
-		<h1 class="mb-4">Affiliatesite.com</h1>
+		<h1 class="mb-4">mysite.com</h1>
 		<div class="md:flex">
 			<div class="md:w-2/3 md:pr-8">
 				<p class="mb-4">
