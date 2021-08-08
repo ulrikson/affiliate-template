@@ -60,6 +60,7 @@ export default {
 		const articles = await $content('articles')
 			.only(['title', 'description', 'img', 'slug', 'updatedAt'])
 			.sortBy('createdAt', 'asc')
+			.limit(4)
 			.fetch();
 
 		return {
