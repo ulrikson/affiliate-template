@@ -8,4 +8,5 @@
 - update all head functions and in nuxt.config.json
 - products
 - favicon & logo
+- run lighthouse
 - create a sitemap, e.g. using [this](https://www.xml-sitemaps.com/)
