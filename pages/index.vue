@@ -32,6 +32,12 @@
 						</nuxt-link>
 					</div>
 				</div>
+
+				<div class="flex justify-center mb-4 md:mb-0">
+					<nuxt-link :to="'/blog'" class="hover:text-gray-500 ">
+						See all posts <span><fa icon="chevron-right"/></span>
+					</nuxt-link>
+				</div>
 			</div>
 			<div class="md:w-1/3 bg-gray-bg rounded-md p-4 md:px-8">
 				<h2>Popular products</h2>
