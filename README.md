@@ -1,13 +1,11 @@
 # affiliate-template
 
-## Sources
-https://devdojo.com/mezie/build-a-blog-with-nuxtjs#showing-a-single-post
-
 ## When duplicating
 
-- favicon & logo
 - title, footer
-- products
 - blog posts
+- [Read this about SEO](https://www.website.com/beginners-guide-to-seo)
 - update all head functions and in nuxt.config.json
-- create a sitemap
+- products
+- favicon & logo
+- create a sitemap, e.g. using [this](https://www.xml-sitemaps.com/)
