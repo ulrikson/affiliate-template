@@ -80,6 +80,13 @@ export default {
 		};
 	},
 
+	head() {
+		return {
+			title: 'HOMEPAGE TITLE',
+			meta: [{ hid: 'description', name: 'description', content: 'INSERT CONTENT' }],
+		};
+	},
+
 	methods: {
 		formatDate(date) {
 			const options = { year: 'numeric', month: 'long', day: 'numeric' };
