@@ -13,7 +13,7 @@
 					<div
 						v-for="(article, i) in articles"
 						:key="article.slug"
-						:class="[i === 0 ? 'md:w-full' : 'md:w-1/3', 'md:px-4 md:py-2 my-4 rounded-md hover:shadow-md']"
+						:class="[i === 0 ? 'md:w-full' : 'md:w-1/3', 'md:px-4 md:py-2 my-4 rounded-md']"
 					>
 						<nuxt-link
 							:to="{ name: 'blog-slug', params: { slug: article.slug } }"
@@ -26,7 +26,7 @@
 							/>
 							<div :class="{ 'md:w-1/2 md:pl-4': i === 0 }">
 								<p class="text-gray-600">{{ formatDate(article.updatedAt) }}</p>
-								<h2 class="my-2">{{ article.title }}</h2>
+								<h2 class="my-2 hover:text-gray-500">{{ article.title }}</h2>
 								<p>{{ article.description }}</p>
 							</div>
 						</nuxt-link>
@@ -36,7 +36,7 @@
 			<div class="md:w-1/3 bg-gray-bg rounded-md p-4 md:px-8">
 				<h2>Popular products</h2>
 				<a :href="product.link" target="blank_" v-for="product in products" :key="product.key">
-					<div class="bg-white p-4 rounded-md my-4 hover:shadow-md">
+					<div class="bg-white p-4 rounded-md my-4 hover:text-gray-500">
 						<div class="flex items-center justify-between">
 							<div class="flex items-center">
 								<nuxt-img :src="'/images/' + product.img" sizes="sm:50px" class="rounded-md" />
