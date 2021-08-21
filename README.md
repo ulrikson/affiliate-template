@@ -11,3 +11,10 @@
 - run lighthouse
 - create a sitemap, e.g. using [this](https://www.xml-sitemaps.com/)
 - Set up some sort of Analytics tool
+
+
+## Running
+
+`yarn install`
+
+`yarn dev`
