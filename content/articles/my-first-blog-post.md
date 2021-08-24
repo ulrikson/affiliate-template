@@ -1,9 +1,9 @@
 ---
-title: My first product Post how to blablabla
-description: Learning how to use @nuxt/content to create a product owowowo wo wodaksdlaskd sdlsakdlkasdd jasdlksld
+title: Reinforcement Learning - Epsilon Greedy algorithm
+description: An in-depth overview of how the Epsilon Greedy algorithm works. Complete with example code and simulation.
 img: first-blog-post.jpg
-alt: my first product post
-credits: {creator: Sumner Mahaffey, origin: Unsplash, url: https://unsplash.com/photos/7vCt_lFxKx4}
+alt: my first post
+credits: {creator: Jason Leung, origin: Unsplash, url: https://unsplash.com/photos/HBGYvOKXu8A}
   
 ---
 
