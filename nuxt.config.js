@@ -39,7 +39,7 @@ export default {
 				imports: [
 					{
 						set: '@fortawesome/free-solid-svg-icons',
-						icons: ['faChevronRight', 'faLayerGroup', 'faPencilRuler', 'faLanguage', 'faBars'],
+						icons: ['faHome', 'faChevronRight'],
 					},
 				],
 			},

@@ -12,7 +12,7 @@
 
 @layer base {
 	body {
-		@apply font-sans bg-black;
+		@apply font-sans bg-gray-900;
 	}
 	
 	h1 {
