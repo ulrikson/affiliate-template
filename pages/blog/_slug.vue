@@ -1,8 +1,8 @@
 <template>
 	<article>
-		<h1>{{ article.title }}</h1>
+		<h1 class="border-b-2 border-indigo-600">{{ article.title }}</h1>
 		<p class="text-center text-gray-500">Last updated: {{ formatDate(article.updatedAt) }}</p>
-		<div class="md:w-2/3 mx-auto">
+		<div>
 			<nuxt-img
 				:src="'/images/' + article.img"
 				sizes="sm:300px md:800px"

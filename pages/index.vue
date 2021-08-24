@@ -2,7 +2,7 @@
 	<div class="mx-auto px-4 my-4">
 		<h1 class="mb-4">mysite.com</h1>
 		<div class="md:flex">
-			<div class="md:w-2/3 md:pr-8">
+			<div class="md:pr-8">
 				<p class="mb-4">
 					Animi asperiores ducimus in et ullam facilis nobis quibusdam. Nobis labore odio aut officiis
 					adipisci. Similique laboriosam laboriosam qui. Eum quo libero voluptatem sed consequatur eius
@@ -25,8 +25,8 @@
 								:class="[{ 'md:w-1/2 md:h-60': i === 0 }, 'object-cover rounded-md']"
 							/>
 							<div :class="{ 'md:w-1/2 md:pl-4': i === 0 }">
-								<p class="text-gray-600">{{ formatDate(article.updatedAt) }}</p>
-								<h2 class="my-2 hover:text-gray-500">{{ article.title }}</h2>
+								<p class="text-gray-400">{{ formatDate(article.updatedAt) }}</p>
+								<h2 class="my-2 border-b-2 border-indigo-600">{{ article.title }}</h2>
 								<p>{{ article.description }}</p>
 							</div>
 						</nuxt-link>
@@ -34,32 +34,16 @@
 				</div>
 
 				<div class="flex justify-center mb-4 md:mb-0">
-					<nuxt-link :to="'/blog'" class="hover:text-gray-500 ">
+					<nuxt-link :to="'/blog'">
 						See all posts <span><fa icon="chevron-right"/></span>
 					</nuxt-link>
 				</div>
-			</div>
-			<div class="md:w-1/3 bg-gray-bg rounded-md p-4 md:px-8">
-				<h2>Popular products</h2>
-				<a :href="product.link" target="blank_" v-for="product in products" :key="product.key">
-					<div class="bg-white p-4 rounded-md my-4 hover:text-gray-500">
-						<div class="flex items-center justify-between">
-							<div class="flex items-center">
-								<nuxt-img :src="'/images/' + product.img" sizes="sm:50px" class="rounded-md" />
-								<h3 class="ml-4">{{ product.title }}</h3>
-							</div>
-							<span><fa icon="chevron-right"/></span>
-						</div>
-						<p class="mt-2 text-gray-700">{{ product.description }}</p>
-					</div>
-				</a>
 			</div>
 		</div>
 	</div>
 </template>
 
 <script>
-import products from '/assets/products/popular.json';
 
 export default {
 	async asyncData({ $content, params }) {
@@ -76,7 +60,7 @@ export default {
 
 	data() {
 		return {
-			products: products,
+			
 		};
 	},
 
