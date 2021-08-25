@@ -20,6 +20,16 @@
 
 			<p class="mt-4">{{ article.description }}</p>
 
+			<ul class="my-4">
+				<li
+					v-for="link of article.toc"
+					:key="link.id"
+					class="text-indigo-600"
+				>
+					<NuxtLink :to="`#${link.id}`">{{ link.text }}</NuxtLink>
+				</li>
+			</ul>
+
 			<nuxt-content :document="article" class="my-8" />
 		</div>
 	</article>

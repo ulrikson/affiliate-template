@@ -3,10 +3,8 @@
 		<h1 class="mb-4">WebDevAI</h1>
 		<div class="md:flex">
 			<div class="md:pr-8">
-				<p class="mb-4">
-					Animi asperiores ducimus in et ullam facilis nobis quibusdam. Nobis labore odio aut officiis
-					adipisci. Similique laboriosam laboriosam qui. Eum quo libero voluptatem sed consequatur eius
-					perferendis. Sequi qui asperiores aliquam ut.
+				<p class="mb-4 text-center">
+					Machine learning from a web development perspective.
 				</p>
 
 				<div class="md:flex flex-wrap my-8">
